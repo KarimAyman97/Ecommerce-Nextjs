@@ -1,0 +1,9 @@
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #111827;
+  &:focus {
+    outline: none;
+  }
+}
