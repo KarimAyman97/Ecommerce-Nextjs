@@ -2,11 +2,7 @@
 
 import { MouseEventHandler, useState } from "react";
 import { DropDownMenuSideBar } from "../dropdown-item";
-import { DropDownLink } from "@/app/types/types";
-import {
-  SquaresPlusIcon,
-  MagnifyingGlassIcon,
-} from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { cookwareProducts, servewareProducts } from "../../products";
 

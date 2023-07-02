@@ -1,4 +1,5 @@
 export type DropDownItems = {
+  id: string | number;
   name: string;
   description?: string;
   href?: string;
@@ -8,4 +9,10 @@ export type DropDownItems = {
 export type DropDownLink = {
   linkName: String;
   dropDownItems: DropDownItems[];
+};
+
+export type SelectorItems = {
+  id: string | number;
+  name: string;
+  [key: string]: any;
 };

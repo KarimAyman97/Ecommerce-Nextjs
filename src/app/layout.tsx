@@ -2,6 +2,7 @@ import ProductNavbar from "./components/products-navbar/products-navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ReduxProvider } from "./store/provider";
+import Selector from "./components/shared/selector";
 
 const inter = Inter({ subsets: ["latin"] });
 

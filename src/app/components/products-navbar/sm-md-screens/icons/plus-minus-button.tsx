@@ -1,7 +1,6 @@
 "use client";
 import { CSSTransition } from "react-transition-group";
 import styles from "@/app/styles/components/products-navbar/products-list-nav.module.scss";
-import { Transition } from "@headlessui/react";
 
 interface PlusComponentProps {
   dropDownOpen: boolean;

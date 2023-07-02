@@ -7,6 +7,7 @@ import { Fragment, useState } from "react";
 import { CloseSidebarButton } from "./close-button";
 import { SidebarNavBtn } from "./navButton";
 import { MenuSidebar } from "./sidebars/menu-sidebar";
+import { SearchSideBar } from "./sidebars/search-sidebar";
 
 export const ProductListSidebar = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -20,11 +21,7 @@ export const ProductListSidebar = () => {
   };
   return (
     <Transition show={mobileMenuOpen} as={Fragment}>
-      <Dialog
-        as="div"
-        // className="lg:hidden"
-        onClose={onCloseMobileMenuHandler}
-      >
+      <Dialog as="div" className="lg:hidden" onClose={onCloseMobileMenuHandler}>
         {/* backdrop */}
         <Transition.Child
           as={Fragment}
@@ -68,6 +65,7 @@ export const ProductListSidebar = () => {
             {activeBtn === "Menu" && (
               <MenuSidebar onClickSearch={() => handleClick("Search")} />
             )}
+            {activeBtn === "Search" && <SearchSideBar />}
           </Dialog.Panel>
         </Transition.Child>
       </Dialog>
