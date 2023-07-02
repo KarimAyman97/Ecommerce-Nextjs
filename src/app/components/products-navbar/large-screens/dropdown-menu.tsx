@@ -1,5 +1,6 @@
-import { Fragment, useEffect, useRef, useState } from "react";
-import { DropDownIcon } from "./dropdown-icon";
+"use client";
+import { Fragment, useRef, useState } from "react";
+import { DropDownIcon } from "./icons/dropdown-icon";
 import { Popover, Transition } from "@headlessui/react";
 import { DropDownLink } from "@/app/types/types";
 import Image from "next/image";
@@ -63,7 +64,7 @@ export const DropDownMenu: React.FC<DropDownMenuProps> = ({
         <Popover.Panel
           onMouseEnter={handlePopoverMouseEnter}
           onMouseLeave={handlePopoverMouseLeave}
-          className="absolute left-1/2 transform -translate-x-1/2 top-8 x-50 z-10 mt-3 w-screen max-w-10xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+          className="absolute left-1/2 transform -translate-x-1/2 top-8  z-10 mt-3 w-screen max-w-10xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
         >
           <div className="p-4 grid grid-cols-3 gap-4">
             {dropDown.dropDownItems.map((item) => (
@@ -78,6 +79,7 @@ export const DropDownMenu: React.FC<DropDownMenuProps> = ({
                       alt={item.name}
                       width={10}
                       height={10}
+                      priority
                       className="h-10 w-10 text-gray-600 group-hover:filter-none filter  grayscale transition duration-300"
                     />
                   ) : (

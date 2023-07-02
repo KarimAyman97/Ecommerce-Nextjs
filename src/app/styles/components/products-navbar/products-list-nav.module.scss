@@ -7,3 +7,98 @@
     outline: none;
   }
 }
+
+.hamburger {
+  display: block;
+  width: 1.7rem;
+  margin-right: 0.2rem;
+  margin-top: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  &:hover &Line {
+    background-color: black;
+  }
+
+  &Line {
+    width: 100%;
+    height: 0.1875rem;
+    background-color: black;
+    border-radius: 10rem;
+    transition: transform 0.8s, background-color 300ms;
+
+    &:not(:first-child) {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.hamburgerAnimEnter,
+.hamburgerAnimExitDone {
+}
+.hamburgerAnimEnterDone,
+.hamburgerAnimExit {
+  .hamburgerLine {
+    &:first-child {
+      transform: translateY(0.6875rem) rotate(-135deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(-225deg);
+    }
+    &:last-child {
+      transform: translateY(-0.6875rem) rotate(135deg);
+    }
+  }
+}
+
+.hamburger2 {
+  display: block;
+  width: 1rem;
+  margin-right: 0.1rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  &:hover &Line {
+    background-color: black;
+  }
+
+  &Line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: black;
+    border-radius: 10rem;
+    transition: transform 0.8s, background-color 300ms;
+
+    &:nth-child(1) {
+      transform: rotate(360deg);
+    }
+
+    &:not(:first-child) {
+      margin-top: -0.1rem;
+      transform: rotate(270deg);
+    }
+  }
+}
+
+.hamburger2AnimEnter,
+.hamburger2AnimExitDone {
+  &:nth-child(1) {
+    transform: rotate(360deg);
+  }
+  &:nth-child(2) {
+    transform: rotate(270deg);
+  }
+}
+.hamburger2AnimEnterDone,
+.hamburger2AnimExit {
+  .hamburger2Line {
+    &:nth-child(1) {
+      transform: rotate(0deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(0deg);
+    }
+  }
+}

@@ -16,7 +16,7 @@ export const DropDownIcon = ({ isOpen }: { isOpen: boolean }) => {
       }}
     >
       <ChevronDownIcon
-        className="h-5 w-5 flex-none text-gray-400"
+        className="h-4 w-4 flex-none text-gray-800"
         aria-hidden="true"
       />
     </CSSTransition>
