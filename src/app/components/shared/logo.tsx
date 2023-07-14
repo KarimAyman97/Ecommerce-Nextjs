@@ -1,20 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-interface LogoProps {
-  width: number;
-  height: number;
-}
-export const Logo: React.FC<LogoProps> = ({ width, height }) => {
+export const Logo: React.FC = () => {
   return (
-    <Link href="#" className="-m-1.5 p-1.5">
+    <Link href="#" className="mx-auto">
       <span className="sr-only">Your Company</span>
-      <Image
-        width={width}
-        height={height}
-        src="/svgs/products-nav/ana.jpg"
-        alt="Logo"
-      />
+      <div className={`relative  w-16 h-16`}>
+        <Image priority fill={true} src="/logo.jpg" alt="Logo" />
+      </div>
     </Link>
   );
 };

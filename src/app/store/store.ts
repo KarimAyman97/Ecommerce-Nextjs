@@ -1,11 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
-import mobileMenuReducer from "./features/section-header.slice";
+import ProductSidebarReducer from "./features/section-header.slice";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
+import mostSellingHomeCategory from "./features/most-selling-home-category";
+import direction from "./features/direction.slice";
 
 // config the store
 export const store = configureStore({
   reducer: {
-    mobileMenu: mobileMenuReducer,
+    productSidebar: ProductSidebarReducer,
+    MostSellingHomeCategory: mostSellingHomeCategory,
+    direction: direction,
   },
 });
 

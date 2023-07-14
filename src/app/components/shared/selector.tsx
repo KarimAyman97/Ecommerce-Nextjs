@@ -32,10 +32,10 @@ const Selector: React.FC<SelectorProps> = ({ dropItems, itemType }) => {
   }, [dropItems]);
 
   return (
-    <div className="w-72 font-medium h-auto">
+    <div className="w-full font-medium h-auto">
       <div
         onClick={() => setOpen(!open)}
-        className={`bg-white w-100 px-6 py-3 flex items-center justify-between rounded-full border-2  ${
+        className={`bg-none w-100 px-6 py-3 flex items-center justify-between rounded-full border-2  ${
           !selected && "text-gray-700"
         }`}
       >
@@ -47,7 +47,7 @@ const Selector: React.FC<SelectorProps> = ({ dropItems, itemType }) => {
         <ChevronDownIcon width={20} className={`${open && "rotate-180"}`} />
       </div>
       <ul
-        className={`bg-white mt-2 overflow-y-auto  ${
+        className={`bg-none mt-2 overflow-y-auto  ${
           open ? "max-h-60" : "max-h-0"
         } `}
       >

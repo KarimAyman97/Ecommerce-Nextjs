@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    theme:{
+      colors:{
+        'facebook':'#1877f2',
+      },
+      extend: {
+        height: {
+          screen: ['20px /* fallback for Opera, IE and etc. */', '100dvh'],
+          'h-68':'17rem',
+        }
+      }
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +25,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [      
+    require('@tailwindcss/aspect-ratio'),
+] ,
 }

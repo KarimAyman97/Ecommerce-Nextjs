@@ -4,8 +4,8 @@ type initialState = { isOpen: boolean };
 
 const initialState = { isOpen: false } as initialState;
 
-const mobileMenuSlice = createSlice({
-  name: "mobileMenu",
+const ProductSidebarSlice = createSlice({
+  name: "productSidebar",
   initialState,
   reducers: {
     toggleMenu: (state) => {
@@ -20,5 +20,5 @@ const mobileMenuSlice = createSlice({
   },
 });
 
-export const { toggleMenu, closeMenu, openMenu } = mobileMenuSlice.actions;
-export default mobileMenuSlice.reducer;
+export const { toggleMenu, closeMenu, openMenu } = ProductSidebarSlice.actions;
+export default ProductSidebarSlice.reducer;

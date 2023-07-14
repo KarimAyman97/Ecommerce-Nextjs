@@ -1,8 +1,8 @@
-import ProductNavbar from "./components/products-navbar/products-navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ReduxProvider } from "./store/provider";
-import Selector from "./components/shared/selector";
+import { Navbars } from "./components/navbar/Navbars";
+import { Navbar } from "./components/navbar-2/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative`}>
+      <body
+        className={`${inter.className}`}
+        style={{ backgroundColor: "#f2f3ed" }}
+        dir="rtl"
+      >
         <ReduxProvider>
-          <ProductNavbar />
+          <Navbar />
           {children}
         </ReduxProvider>
       </body>
