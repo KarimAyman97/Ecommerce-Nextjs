@@ -17,7 +17,7 @@ export default function Layout({
     <div>
       <Navbar />
       {children}
-      {/* {modal} */}
+      {modal}
       <Footer />
     </div>
   );
