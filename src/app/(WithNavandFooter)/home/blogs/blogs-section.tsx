@@ -5,6 +5,7 @@ import { BlogsHeaderAnimation } from "./blogs-header-animation";
 
 const blogs: Blog[] = [
   {
+    id: "1",
     about: "Guides",
     title:
       "Stick with High-Quality, Healthy Non-Toxic Cookware for Safe & Healthy Eating",
@@ -16,6 +17,7 @@ const blogs: Blog[] = [
     link: "#",
   },
   {
+    id: "3",
     about: "Guides",
     title: "Vegetable Cooking Chart",
     image: "imgs/home/blogs/2.jpg",
@@ -26,6 +28,7 @@ const blogs: Blog[] = [
     link: "#",
   },
   {
+    id: "2",
     about: "Guides",
     title: "Waterless Cookware – The Best Cookware",
     image: "imgs/home/blogs/3.jpg",
@@ -54,7 +57,7 @@ export const BlogsSection = () => {
         </BlogsHeaderAnimation>
         <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
           {blogs.map((blog) => (
-            <BlogPost blog={blog} />
+            <BlogPost key={blog.id} blog={blog} />
           ))}
         </div>
       </div>

@@ -81,6 +81,7 @@ export type PageReview = {
 };
 
 export type Blog = {
+  id: string;
   about: string;
   title: string;
   image: string;

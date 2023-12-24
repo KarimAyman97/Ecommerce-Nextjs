@@ -26,8 +26,8 @@ export default async function CategoryProducts({
     <Filters>
       {products.length > 0 ? (
         products.map((product) => (
-          <div>
-            <ProductItem key={product.id} product={product} />
+          <div key={product.id}>
+            <ProductItem product={product} />
           </div>
         ))
       ) : (

@@ -35,6 +35,7 @@ export const IncentivesSection = () => {
         <div className="grid grid-cols-2 text-start  gap-y-8 lg:grid-cols-4 sm:gap-12 ">
           {incentives.map((incentive) => (
             <IntenciveElement
+              key={incentive.title}
               Icon={incentive.Icon}
               title={incentive.title}
               description={incentive.description}
