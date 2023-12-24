@@ -1,8 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { ReduxProvider } from "./store/provider";
-import { Navbars } from "./components/navbar/Navbars";
-import { Navbar } from "./components/navbar-2/navbar";
+import { ReduxProvider } from "./_store/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${inter.className}`}
-        style={{ backgroundColor: "#f2f3ed" }}
-        dir="rtl"
+        // style={{ backgroundColor: "#f2f3ed" }}
+        dir="ltr"
       >
-        <ReduxProvider>
-          <Navbar />
-          {children}
-        </ReduxProvider>
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );

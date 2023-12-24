@@ -7,7 +7,7 @@
 *::after {
   box-sizing: border-box;
 }
-
+@import "swiper/css";
 
 
 

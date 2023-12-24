@@ -1,0 +1,97 @@
+.row-count {
+  &:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 23px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  &:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 13px 0 0 black;
+    cursor: pointer;
+  }
+  &:nth-child(3):before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 13px 0 0 black;
+    cursor: pointer;
+  }
+  &:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 26px 0 0 black;
+    cursor: pointer;
+  }
+  &:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 26px 0 0 black, 39px 0 0 black;
+    cursor: pointer;
+  }
+  &:nth-child(6)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 26px 0 0 black;
+    cursor: pointer;
+  }
+  &:nth-child(7)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 26px 0 0 black, 39px 0 0 black;
+    cursor: pointer;
+  }
+  &:nth-child(8)::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 20px;
+    background: black;
+    transition: 0.3s;
+    box-shadow: 13px 0 0 black, 26px 0 0 black, 39px 0 0 black, 52px 0 0 black;
+    cursor: pointer;
+  }
+}
