@@ -9,12 +9,15 @@ export const TrendingProducts = ({
 }: {
   fakeProducts: ProductItemType[];
 }) => {
+  console.log(fakeProducts);
   const selectedCategory = useAppSelector(
     (state) => state.TrendingProductsSlice.category
   );
   const filteredData = fakeProducts.filter(
-    (product) => product.category === selectedCategory
+    (product) => product.category == selectedCategory
   );
+  console.log(filteredData, selectedCategory);
+
   return (
     <div
       className={`mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8`}

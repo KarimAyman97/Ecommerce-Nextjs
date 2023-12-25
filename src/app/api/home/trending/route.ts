@@ -6,7 +6,7 @@ const TrendingData: ProductItemType[] = [
     id: 1,
     title: "Wooden Circular Bowls 1",
     price: 500,
-    category: "cookware",
+    category: "Dinner-Set",
     quantity: 2,
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
@@ -22,7 +22,7 @@ const TrendingData: ProductItemType[] = [
     price: 500,
     quantity: 1,
 
-    category: "cookware",
+    category: "Dinner-Set",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/bowl.jpg",
@@ -37,7 +37,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Dinner-Set",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/bowl.jpg",
@@ -52,7 +52,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Dinner-Set",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/bowl.jpg",
@@ -65,7 +65,7 @@ const TrendingData: ProductItemType[] = [
     id: 5,
     title: "Pan 1",
     price: 500,
-    category: "cookware",
+    category: "Pans",
     quantity: 2,
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
@@ -81,7 +81,7 @@ const TrendingData: ProductItemType[] = [
     price: 500,
     quantity: 1,
 
-    category: "cookware",
+    category: "Pans",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/pan.jpg",
@@ -96,7 +96,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Pans",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/pan.jpg",
@@ -111,7 +111,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Pans",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/pan.jpg",
@@ -124,7 +124,7 @@ const TrendingData: ProductItemType[] = [
     id: 9,
     title: "bottle 1 ",
     price: 500,
-    category: "cookware",
+    category: "Drinkware",
     quantity: 2,
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
@@ -140,7 +140,7 @@ const TrendingData: ProductItemType[] = [
     price: 500,
     quantity: 1,
 
-    category: "cookware",
+    category: "Drinkware",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/bottle.jpg",
@@ -155,7 +155,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Drinkware",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/bottle.jpg",
@@ -170,7 +170,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Drinkware",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/bottle.jpg",
@@ -183,7 +183,7 @@ const TrendingData: ProductItemType[] = [
     id: 13,
     title: "Tray 1",
     price: 500,
-    category: "cookware",
+    category: "Trays & Bowls",
     quantity: 2,
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
@@ -199,7 +199,7 @@ const TrendingData: ProductItemType[] = [
     price: 500,
     quantity: 1,
 
-    category: "cookware",
+    category: "Trays & Bowls",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/trays.jpg",
@@ -214,7 +214,7 @@ const TrendingData: ProductItemType[] = [
     quantity: 0,
 
     price: 500,
-    category: "cookware",
+    category: "Trays & Bowls",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/trays.jpg",
@@ -228,7 +228,7 @@ const TrendingData: ProductItemType[] = [
     title: "Tray 4",
     quantity: 0,
     price: 500,
-    category: "cookware",
+    category: "Trays & Bowls",
     description:
       "A set of 4 natural wood bowls for safe and healthy usage to serve nuts , fruits and salad.",
     image: "/imgs/home/trending/trays.jpg",

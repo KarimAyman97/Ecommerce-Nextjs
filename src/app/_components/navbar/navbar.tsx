@@ -116,7 +116,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       {/* Mobile menu */}
       <Sidebar />
       <header className="relative">
@@ -142,14 +142,13 @@ export const Navbar = () => {
                   direction === "ltr" ? "lg:ml-0" : "lg:mr-0"
                 }`}
               >
-                <Link href="#">
+                <Link href="/home">
                   <span className="sr-only">Your Company</span>
                   <Image
-                    className="h-8 w-8 "
-                    width={8}
-                    height={8}
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src={"/images/logo.svg"}
                     alt=""
+                    width={100}
+                    height={100}
                   />
                 </Link>
               </div>
