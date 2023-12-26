@@ -18,9 +18,7 @@ import { TrendingData } from "@/app/api/home/product/[category]/route";
 // }
 
 // only to deploy it on vercel
-export async function getProducts(
-  category: string
-): Promise<ProductItemType[]> {
+async function getProducts(category: string): Promise<ProductItemType[]> {
   const filteredData = TrendingData.filter((item) => item.category == category);
   return filteredData;
 }
