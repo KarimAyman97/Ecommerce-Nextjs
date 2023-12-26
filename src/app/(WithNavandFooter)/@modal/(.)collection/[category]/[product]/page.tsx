@@ -11,23 +11,37 @@ import { addCartItem } from "@/app/_store/features/cart-slice";
 import { addWishlistItem } from "@/app/_store/features/wishlist-slice";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import { TrendingData } from "@/app/api/home/product/[category]/[productId]/route";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
+// export async function getProduct(
+//   category: string,
+//   productId: string | number
+// ): Promise<any> {
+//   const response = await fetch(
+//     `http://localhost:3000/api/home/product/${category}/${productId}`,
+//     {
+//       method: "GET",
+//     }
+//   );
+//   const product = await response.json();
+//   return product;
+// }
+
+// this is only to export it on Vercel
 export async function getProduct(
   category: string,
   productId: string | number
 ): Promise<any> {
-  const response = await fetch(
-    `http://localhost:3000/api/home/product/${category}/${productId}`,
-    {
-      method: "GET",
-    }
-  );
-  const product = await response.json();
-  return product;
+  if (category && productId) {
+    const filteredData = TrendingData.filter(
+      (item) => item.category == category && item.id == productId
+    );
+    return filteredData[0];
+  }
 }
 
 export default async function ProductDetailsModal({

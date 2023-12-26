@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { TrendingSelectors } from "./trending-selectors";
 import TrendingLoading from "./trending-loading";
-import { TrendingData } from "./trending-data";
+import { TrendingDaata } from "./trending-data";
 import { TrendingHeaderAnimation } from "./trending-header-animation";
 
 export const TrendingSection = () => {
@@ -17,7 +17,7 @@ export const TrendingSection = () => {
       </TrendingHeaderAnimation>
       <div>
         <Suspense fallback={<TrendingLoading />}>
-          <TrendingData />
+          <TrendingDaata />
         </Suspense>
       </div>
     </section>

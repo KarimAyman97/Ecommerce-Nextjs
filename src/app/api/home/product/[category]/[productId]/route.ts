@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { ProductItemType } from "@/app/_types/types";
 
-const TrendingData: ProductItemType[] = [
+export const TrendingData: ProductItemType[] = [
   {
     id: 1,
     title: "Wooden Circular Bowls 1",
