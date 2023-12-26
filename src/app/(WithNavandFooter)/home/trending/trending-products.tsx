@@ -9,14 +9,12 @@ export const TrendingProducts = ({
 }: {
   fakeProducts: ProductItemType[];
 }) => {
-  console.log(fakeProducts);
   const selectedCategory = useAppSelector(
     (state) => state.TrendingProductsSlice.category
   );
   const filteredData = fakeProducts.filter(
     (product) => product.category == selectedCategory
   );
-  console.log(filteredData, selectedCategory);
 
   return (
     <div

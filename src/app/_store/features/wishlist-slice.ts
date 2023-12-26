@@ -3,7 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 type initialState = { wishlist: any[] };
 
 const getInitialWishlist = () => {
-  const storedWishlist = localStorage.getItem("wishlist");
+  const storedWishlist =
+    typeof window !== "undefined"
+      ? window.localStorage.getItem("wishlist")
+      : false;
   return storedWishlist ? JSON.parse(storedWishlist) : [];
 };
 
