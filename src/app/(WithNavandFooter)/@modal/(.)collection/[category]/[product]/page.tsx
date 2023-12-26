@@ -32,7 +32,7 @@ function classNames(...classes: string[]) {
 // }
 
 // this is only to export it on Vercel
-async function getProduct(
+export async function getProduct(
   category: string,
   productId: string | number
 ): Promise<any> {
