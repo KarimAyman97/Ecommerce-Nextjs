@@ -11,7 +11,7 @@ import { TrendingData } from "@/app/api/home/trending/route";
 // }
 
 // this is only to export it on Vercel
-export async function fetchProducts(): Promise<ProductItemType[]> {
+async function fetchProducts(): Promise<ProductItemType[]> {
   return TrendingData;
 }
 

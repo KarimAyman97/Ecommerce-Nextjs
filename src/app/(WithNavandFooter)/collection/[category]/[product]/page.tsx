@@ -19,7 +19,7 @@ import { TrendingData } from "@/app/api/home/product/[category]/[productId]/rout
 // }
 
 // this is only to export it on Vercel
-export async function getProduct(
+async function getProduct(
   category: string,
   productId: string | number
 ): Promise<any> {
