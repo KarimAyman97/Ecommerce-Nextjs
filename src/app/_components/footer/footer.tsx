@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -6,18 +7,15 @@ export const Footer = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
-            <img
-              className="w-auto h-9"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-              alt=""
-            />
+            <Image src={"/images/logo.svg"} alt="" width={100} height={100} />
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud reprhendit in voluptate velit
-              esse exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Embark on a culinary journey with Kitchenary, your go-to source
+              for kitchen inspiration. Delve into a world of flavors and
+              innovation that transforms ordinary meals into extraordinary
+              experiences. Explore a diverse range of recipes, expert tips, and
+              quality kitchen essentials to elevate your cooking expertise.
+              Kitchenary – where passion meets perfection.
             </p>
           </div>
 
